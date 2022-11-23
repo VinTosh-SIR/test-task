@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/zero-style.css">
+    <link rel="stylesheet" type="text/css" href="style/layout.css">
+    <link rel="stylesheet" type="text/css" href="style/buttons.css">
+    <link rel="stylesheet" type="text/css" href="style/text.css">
+    <link rel="stylesheet" type="text/css" href="style/inputs.css">
+    <link rel="stylesheet" type="text/css" href="style/custom-select.css">
+    <meta name="viewport" content="width=device-width">
+    <title>contact-form</title>
+</head>
+<body>
+<div class="form-container">
+    <header class="form-header">
+        <h2 class="form-title">Contact Us</h2>
+        <p class="form-description">The Voodoo team is looking
+            forward to hearing from you!</p>
+    </header>
+    <form class="form-main">
+        <input type="text" name="name" class="name" placeholder="Full Name*"/>
+        <input type="text" name="title-position" class="position" placeholder="Title/Position*"/>
+        <div class="custom-select practice">
+            <select name="practice">
+                <option value="0">Practice / Institution*</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+            </select>
+        </div>
+        <input type="number" name="number" class="phone" placeholder="Phone Number*"/>
+        <input type="email" name="email" class="email" placeholder="Email Address*"/>
+        <div class="custom-select profession">
+            <select name="profession">
+                <option value="0">Medical Profession*</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+            </select>
+        </div>
+        <input type="text" name="type-of-inquiry" class="inquiry" placeholder="Type of Inquiry*">
+        <textarea class="message" placeholder="Enter Message*"></textarea>
+        <button class="send-message">Send message</button>
+    </form>
+    <div class="map" id="map"></div>
+</div>
+<script type="text/javascript" src="custom-select.js"></script>
+<script type="text/javascript" src="map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=key&callback=initMap">
+</script>
+</body>
+</html>

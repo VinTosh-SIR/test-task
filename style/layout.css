@@ -1,0 +1,79 @@
+body {
+    background-color: #fcfafa;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 630px 470px;
+    grid-template-rows: 79px 1fr;
+    grid-template-areas:
+            "h m"
+            "f m";
+    max-width: 1140px;
+    width: 100%;
+    margin: 138px auto;
+    gap: 40px;
+}
+
+.form-header {
+    display: block;
+    width: 100%;
+    grid-area: h;
+    max-width: 630px;
+}
+
+.form-main {
+    margin-top: 31px;
+    display: grid;
+    width: 100%;
+    grid-area: f;
+    max-width: 630px;
+    gap: 31px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 64px 64px 64px 64px 356px 1fr;
+    grid-template-areas:
+            "name pst"
+            "prct email"
+            "phone prof"
+            "inq inq"
+            "mes mes"
+            "btn btn";
+}
+
+#map {
+    display: block;
+    width: 100%;
+    grid-area: m;
+    max-width: 470px;
+    height: 100%;
+    justify-self: right;
+    max-height: 936px;
+}
+
+
+@media screen and (max-width: 420px) {
+    .form-container {
+        margin: 77px auto 40px;
+        max-width: 353px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 0 22px 0 20px;
+    }
+
+    .form-header {
+        display: block;
+        width: 100%;
+
+    }
+
+    .form-main {
+        display: block;
+        width: 100%;
+    }
+
+    #map {
+        height: 573px;
+    }
+}
+

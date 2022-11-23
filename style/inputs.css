@@ -1,0 +1,73 @@
+
+
+.form-main > input, textarea {
+    height: 64px;
+    margin-top: 4px;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    box-shadow: 0 16px 32px rgba(202, 203, 210, 0.25);
+    border-radius: 8px;
+    border: none;
+    padding: 0 0 0 19px;
+}
+
+
+.name {
+    grid-area: name;
+}
+
+.position {
+    grid-area: pst;
+}
+
+.email {
+    grid-area: email;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.profession {
+    grid-area: prof;
+}
+
+.inquiry {
+    grid-area: inq;
+}
+.practice{
+    grid-area: prct;
+}
+
+.message {
+    padding: 18px 0 0 19px;
+    grid-area: mes;
+    height: 100%;
+    overflow: hidden;
+    resize: none;
+}
+
+@media screen and (max-width: 420px) {
+    .form-main > input, textarea {
+        margin: 37px auto 0;
+        height: 64px;
+        width: 332px;
+    }
+
+    .form-main > select {
+        width: 100%;
+
+    }
+
+    .message {
+        height: 338px;
+        width: 332px;
+    }
+
+
+}
+

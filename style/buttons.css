@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+.send-message{
+    display: block;
+    width: 221px;
+    height: 57px;
+    background: #1A1A1A;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    grid-area: btn;
+    margin: 51px 0 100px 0;
+}
+.send-message:hover{
+    background: #151515;
+    color: #f3f3f3;
+}
+.send-message:active{
+    background: #000000;
+    color: #fffff0;
+}
+
+@media screen and (max-width: 420px) {
+    .send-message{
+        margin: 36px 0 50px 0;
+        width: 100%;
+        height: 51px;
+        padding: 0;
+    }
+}
