@@ -1,5 +1,4 @@
 
-
 .form-main > input, textarea {
     height: 64px;
     margin-top: 4px;
@@ -13,6 +12,12 @@
     border-radius: 8px;
     border: none;
     padding: 0 0 0 19px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
@@ -39,7 +44,8 @@
 .inquiry {
     grid-area: inq;
 }
-.practice{
+
+.practice {
     grid-area: prct;
 }
 
